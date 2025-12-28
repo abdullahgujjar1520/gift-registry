@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - GiftEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-gift"></i>
+                <span>GiftEase</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="create-registry.html">
+                    <i class="fas fa-plus-circle"></i>
+                    Create Registry
+                </a>
+                <a href="search.html">
+                    <i class="fas fa-search"></i>
+                    Find Registry
+                </a>
+                <a href="profile.html" class="active">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+                <a href="index.html" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <header class="dashboard-header">
+                <h1>My Profile</h1>
+                <div class="user-info">
+                    <span>Sarah Johnson</span>
+                    <a href="profile.html" class="avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+            </header>
+
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-circle"></i>
+                        <button class="btn-avatar-change">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <div class="profile-info">
+                        <h2>Sarah Johnson</h2>
+                        <p>Member since: January 2023</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <strong>5</strong>
+                                <span>Registries</span>
+                            </div>
+                            <div class="stat">
+                                <strong>42</strong>
+                                <span>Total Items</span>
+                            </div>
+                            <div class="stat">
+                                <strong>156</strong>
+                                <span>Registry Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <!-- Personal Information -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h3>Personal Information</h3>
+                            <button class="btn btn-outline">Edit</button>
+                        </div>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Full Name</label>
+                                <p>Sarah Johnson</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Email Address</label>
+                                <p>sarah.johnson@example.com</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Phone Number</label>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Birthday</label>
+                                <p>October 15, 1994</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account Settings -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h3>Account Settings</h3>
+                        </div>
+                        <div class="settings-list">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Email Notifications</h4>
+                                    <p>Receive updates about your registries</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Public Profile</h4>
+                                    <p>Allow others to find your registries</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Two-Factor Authentication</h4>
+                                    <p>Add extra security to your account</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Book -->
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h3>Shipping Address</h3>
+                            <button class="btn btn-outline">Edit</button>
+                        </div>
+                        <div class="address-card">
+                            <h4>Primary Address</h4>
+                            <p>Sarah Johnson</p>
+                            <p>123 Main Street</p>
+                            <p>Apt 4B</p>
+                            <p>New York, NY 10001</p>
+                            <p>United States</p>
+                        </div>
+                    </div>
+
+                    <!-- Danger Zone -->
+                    <div class="profile-section danger-zone">
+                        <div class="section-header">
+                            <h3>Danger Zone</h3>
+                        </div>
+                        <div class="danger-actions">
+                            <div class="danger-item">
+                                <div>
+                                    <h4>Delete Account</h4>
+                                    <p>Permanently delete your account and all data</p>
+                                </div>
+                                <button class="btn btn-danger">Delete Account</button>
+                            </div>
+                            <div class="danger-item">
+                                <div>
+                                    <h4>Export Data</h4>
+                                    <p>Download all your data in JSON format</p>
+                                </div>
+                                <button class="btn btn-outline">Export Data</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

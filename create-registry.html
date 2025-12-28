@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Registry - GiftEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-gift"></i>
+                <span>GiftEase</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="create-registry.html" class="active">
+                    <i class="fas fa-plus-circle"></i>
+                    Create Registry
+                </a>
+                <a href="search.html">
+                    <i class="fas fa-search"></i>
+                    Find Registry
+                </a>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+                <a href="index.html" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <header class="dashboard-header">
+                <h1>Create New Registry</h1>
+                <div class="user-info">
+                    <span>Welcome, Abdullah!</span>
+                    <a href="profile.html" class="avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+            </header>
+
+            <div class="form-container">
+                <form id="createRegistryForm">
+                    <div class="form-section">
+                        <h2>Registry Details</h2>
+                        
+                        <div class="form-group">
+                            <label for="registryTitle">Registry Title *</label>
+                            <input type="text" id="registryTitle" placeholder="e.g., Sarah's 30th Birthday" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="registryType">Registry Type *</label>
+                            <select id="registryType" required>
+                                <option value="">Select Type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="baby-shower">Baby Shower</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="graduation">Graduation</option>
+                                <option value="holiday">Holiday</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="eventDate">Event Date</label>
+                                <input type="date" id="eventDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="registryPrivacy">Privacy</label>
+                                <select id="registryPrivacy">
+                                    <option value="public">Public (Anyone can view)</option>
+                                    <option value="private">Private (Only with link)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="registryDescription">Description</label>
+                            <textarea id="registryDescription" rows="4" placeholder="Tell your guests about your event..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Add Gift Items</h2>
+                        <div id="giftItemsContainer">
+                            <div class="gift-item">
+                                <div class="gift-item-header">
+                                    <h3>Item #1</h3>
+                                    <button type="button" class="btn-remove-item">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Item Name *</label>
+                                        <input type="text" placeholder="e.g., KitchenAid Stand Mixer" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Price *</label>
+                                        <input type="number" placeholder="0.00" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <textarea placeholder="Item description, color, size, etc." rows="2"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Image URL (optional)</label>
+                                    <input type="url" placeholder="https://example.com/image.jpg">
+                                </div>
+                                <div class="form-group">
+                                    <label>Store/Website Link (optional)</label>
+                                    <input type="url" placeholder="https://example.com/product">
+                                </div>
+                                <div class="form-group">
+                                    <label>Priority</label>
+                                    <select>
+                                        <option value="low">Low</option>
+                                        <option value="medium" selected>Medium</option>
+                                        <option value="high">High</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="button" id="addGiftItem" class="btn btn-outline">
+                            <i class="fas fa-plus"></i> Add Another Item
+                        </button>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary">Save Draft</button>
+                        <button type="submit" class="btn btn-primary">Create Registry</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Registry - GiftEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-gift"></i>
+                <span>GiftEase</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="search.html" class="active">Find Registry</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-container">
+        <div class="search-hero">
+            <div class="container">
+                <h1>Find a Gift Registry</h1>
+                <p>Search for registries by name, event type, or registry ID</p>
+                
+                <div class="search-box">
+                    <div class="search-input-group">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search by name, email, or registry ID...">
+                        <button class="btn btn-primary">
+                            Search
+                        </button>
+                    </div>
+                    <div class="search-filters">
+                        <select>
+                            <option value="">All Event Types</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="baby-shower">Baby Shower</option>
+                            <option value="anniversary">Anniversary</option>
+                        </select>
+                        <select>
+                            <option value="">Any Date</option>
+                            <option value="upcoming">Upcoming Events</option>
+                            <option value="past">Past Events</option>
+                            <option value="this-month">This Month</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="search-results-header">
+                <h2>Featured Registries</h2>
+                <div class="results-count">Showing 8 registries</div>
+            </div>
+
+            <div class="registries-grid">
+                <!-- Registry 1 -->
+                <div class="search-registry-card">
+                    <div class="registry-type-badge badge-wedding">
+                        <i class="fas fa-ring"></i>
+                        Wedding
+                    </div>
+                    <div class="registry-content">
+                        <h3>Sarah & Michael's Wedding</h3>
+                        <p class="registry-date">
+                            <i class="far fa-calendar"></i>
+                            June 22, 2024
+                        </p>
+                        <div class="registry-stats">
+                            <span>15 items • 6 purchased</span>
+                        </div>
+                        <div class="registry-progress">
+                            <div class="progress-bar small">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                            <span>40% complete</span>
+                        </div>
+                    </div>
+                    <div class="registry-actions">
+                        <a href="registry-detail.html" class="btn btn-primary">View Registry</a>
+                    </div>
+                </div>
+
+                <!-- Registry 2 -->
+                <div class="search-registry-card">
+                    <div class="registry-type-badge badge-birthday">
+                        <i class="fas fa-birthday-cake"></i>
+                        Birthday
+                    </div>
+                    <div class="registry-content">
+                        <h3>John's 40th Birthday</h3>
+                        <p class="registry-date">
+                            <i class="far fa-calendar"></i>
+                            August 5, 2024
+                        </p>
+                        <div class="registry-stats">
+                            <span>20 items • 12 purchased</span>
+                        </div>
+                        <div class="registry-progress">
+                            <div class="progress-bar small">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span>60% complete</span>
+                        </div>
+                    </div>
+                    <div class="registry-actions">
+                        <a href="registry-detail.html" class="btn btn-primary">View Registry</a>
+                    </div>
+                </div>
+
+                <!-- Registry 3 -->
+                <div class="search-registry-card">
+                    <div class="registry-type-badge badge-baby">
+                        <i class="fas fa-baby"></i>
+                        Baby Shower
+                    </div>
+                    <div class="registry-content">
+                        <h3>Baby Rodriguez Shower</h3>
+                        <p class="registry-date">
+                            <i class="far fa-calendar"></i>
+                            September 10, 2024
+                        </p>
+                        <div class="registry-stats">
+                            <span>18 items • 5 purchased</span>
+                        </div>
+                        <div class="registry-progress">
+                            <div class="progress-bar small">
+                                <div class="progress-fill" style="width: 28%"></div>
+                            </div>
+                            <span>28% complete</span>
+                        </div>
+                    </div>
+                    <div class="registry-actions">
+                        <a href="registry-detail.html" class="btn btn-primary">View Registry</a>
+                    </div>
+                </div>
+
+                <!-- Registry 4 -->
+                <div class="search-registry-card">
+                    <div class="registry-type-badge badge-anniversary">
+                        <i class="fas fa-heart"></i>
+                        Anniversary
+                    </div>
+                    <div class="registry-content">
+                        <h3>25th Anniversary Celebration</h3>
+                        <p class="registry-date">
+                            <i class="far fa-calendar"></i>
+                            July 18, 2024
+                        </p>
+                        <div class="registry-stats">
+                            <span>10 items • 8 purchased</span>
+                        </div>
+                        <div class="registry-progress">
+                            <div class="progress-bar small">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <span>80% complete</span>
+                        </div>
+                    </div>
+                    <div class="registry-actions">
+                        <a href="registry-detail.html" class="btn btn-primary">View Registry</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Find Section -->
+            <div class="find-instructions">
+                <h2>How to Find a Registry</h2>
+                <div class="instructions-grid">
+                    <div class="instruction">
+                        <div class="instruction-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Search by Name</h3>
+                        <p>Enter the first and last name of the person or couple</p>
+                    </div>
+                    <div class="instruction">
+                        <div class="instruction-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Search by Email</h3>
+                        <p>If you know their email address, you can search with it</p>
+                    </div>
+                    <div class="instruction">
+                        <div class="instruction-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <h3>Registry ID</h3>
+                        <p>Use the unique registry ID if you have it</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Need Help?</h3>
+                    <a href="#">Frequently Asked Questions</a>
+                    <a href="#">Contact Support</a>
+                    <a href="#">Registry Etiquette Guide</a>
+                </div>
+                <div class="footer-section">
+                    <h3>GiftEase</h3>
+                    <p>The easiest way to create and manage gift registries for any occasion.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GiftEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah's Birthday Registry - GiftEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-gift"></i>
+                <span>GiftEase</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="search.html">Find Registry</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="registry-detail-container">
+        <div class="registry-header">
+            <div class="container">
+                <div class="registry-info">
+                    <span class="registry-badge badge-birthday"><h1>Birthday</h1></span>
+                    
+                    <h1>Abdullah 22th Birthday Celebration</h1>
+                    <p class="registry-date">
+                        <i class="far fa-calendar"></i>
+                        October 15, 2024
+                    </p>
+                    <p class="registry-description">
+                        Help me celebrate my 30th birthday! I've created this registry to make gift-giving easy and ensure I get items I'll truly love and use.
+                    </p>
+                    <div class="registry-stats">
+                        <div class="stat">
+                            <strong>25</strong>
+                            <span>Total Items</span>
+                        </div>
+                        <div class="stat">
+                            <strong>12</strong>
+                            <span>Purchased</span>
+                        </div>
+                        <div class="stat">
+                            <strong>13</strong>
+                            <span>Remaining</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="registry-actions">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-share-alt"></i>
+                        Share Registry
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-print"></i>
+                        Print List
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Progress Bar -->
+            <div class="progress-section">
+                <div class="progress-header">
+                    <h3>Registry Progress</h3>
+                    <span>48% Complete</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 48%"></div>
+                </div>
+            </div>
+
+            <!-- Gift Items -->
+            <div class="gift-items-section">
+                <div class="section-header">
+                    <h2>Gift Items</h2>
+                    <div class="filter-options">
+                        <select class="filter-select">
+                            <option value="all">All Items</option>
+                            <option value="available">Available</option>
+                            <option value="purchased">Purchased</option>
+                            <option value="priority">High Priority</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="gift-items-grid">
+                    <!-- Item 1 -->
+                    <div class="gift-item-card">
+                        <div class="gift-item-status purchased">
+                            <i class="fas fa-check-circle"></i>
+                            Purchased
+                        </div>
+                        <div class="gift-item-image">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80%22" alt="Coffee Machine">
+                        </div>
+                        <div class="gift-item-info">
+                            <h3>Espresso Machine</h3>
+                            <p class="gift-item-price">$249.99</p>
+                            <p class="gift-item-desc">Automatic espresso machine with milk frother</p>
+                            <div class="gift-item-meta">
+                                <span class="priority high">High Priority</span>
+                                <span class="store">Amazon</span>
+                            </div>
+                        </div>
+                        <div class="gift-item-actions">
+                            <button class="btn btn-disabled" disabled>
+                                <i class="fas fa-check"></i>
+                                Already Purchased
+                            </button>
+                            <small>Purchased by Alex Johnson</small>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="gift-item-card">
+                        <div class="gift-item-status available">
+                            <i class="fas fa-gift"></i>
+                            Available
+                        </div>
+                        <div class="gift-item-image">
+                            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Camera">
+                        </div>
+                        <div class="gift-item-info">
+                            <h3>Digital Camera</h3>
+                            <p class="gift-item-price">$599.99</p>
+                            <p class="gift-item-desc">Mirrorless camera for photography enthusiasts</p>
+                            <div class="gift-item-meta">
+                                <span class="priority high">High Priority</span>
+                                <span class="store">Best Buy</span>
+                            </div>
+                        </div>
+                        <div class="gift-item-actions">
+                            <button class="btn btn-primary btn-mark-purchased">
+                                <i class="fas fa-cart-plus"></i>
+                                Mark as Purchased
+                            </button>
+                            <a href="#" class="btn-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="gift-item-card">
+                        <div class="gift-item-status available">
+                            <i class="fas fa-gift"></i>
+                            Available
+                        </div>
+                        <div class="gift-item-image">
+                            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cookbook">
+                        </div>
+                        <div class="gift-item-info">
+                            <h3>Cookbook Collection</h3>
+                            <p class="gift-item-price">$45.00</p>
+                            <p class="gift-item-desc">Set of 3 gourmet cookbooks</p>
+                            <div class="gift-item-meta">
+                                <span class="priority medium">Medium Priority</span>
+                                <span class="store">Barnes & Noble</span>
+                            </div>
+                        </div>
+                        <div class="gift-item-actions">
+                            <button class="btn btn-primary btn-mark-purchased">
+                                <i class="fas fa-cart-plus"></i>
+                                Mark as Purchased
+                            </button>
+                            <a href="#" class="btn-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="gift-item-card">
+                        <div class="gift-item-status reserved">
+                            <i class="fas fa-clock"></i>
+                            Reserved
+                        </div>
+                        <div class="gift-item-image">
+                            <img src="https://images.unsplash.com/photo-1572315831029-5d6f20e0035d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Headphones">
+                        </div>
+                        <div class="gift-item-info">
+                            <h3>Wireless Headphones</h3>
+                            <p class="gift-item-price">$199.99</p>
+                            <p class="gift-item-desc">Noise-cancelling Bluetooth headphones</p>
+                            <div class="gift-item-meta">
+                                <span class="priority medium">Medium Priority</span>
+                                <span class="store">Apple Store</span>
+                            </div>
+                        </div>
+                        <div class="gift-item-actions">
+                            <button class="btn btn-secondary" disabled>
+                                <i class="fas fa-clock"></i>
+                                Reserved by Maria
+                            </button>
+                            <small>Expires in 2 days</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Section -->
+            <div class="share-section">
+                <h3>Share This Registry</h3>
+                <div class="share-options">
+                    <button class="share-btn">
+                        <i class="fab fa-facebook"></i>
+                        Facebook
+                    </button>
+                    <button class="share-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </button>
+                    <button class="share-btn">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </button>
+                    <button class="share-btn">
+                        <i class="fas fa-link"></i>
+                        Copy Link
+                    </button>
+                </div>
+                <div class="registry-link">
+                    <input type="text" value="https://giftease.com/registry/sarah-birthday-2024" readonly>
+                    <button class="btn-copy">
+                        <i class="far fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GiftEase. This registry is managed by Sarah Johnson.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

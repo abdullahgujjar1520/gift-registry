@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GiftEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-gift"></i>
+                <span>GiftEase</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="active">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="create-registry.html">
+                    <i class="fas fa-plus-circle"></i>
+                    Create Registry
+                </a>
+                <a href="search.html">
+                    <i class="fas fa-search"></i>
+                    Find Registry
+                </a>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+                <a href="index.html" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <header class="dashboard-header">
+                <h1>My Dashboard</h1>
+                <div class="user-info">
+                    <span>Welcome, Abdullah!</span>
+                    <a href="profile.html" class="avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Quick Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>5</h3>
+                        <p>Active Registries</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>42</h3>
+                        <p>Total Items</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>18</h3>
+                        <p>Purchased Items</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-share"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>156</h3>
+                        <p>Registry Views</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Registries -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>My Registries</h2>
+                    <a href="create-registry.html" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Create New
+                    </a>
+                </div>
+                
+                <div class="registries-grid">
+                    <div class="registry-card">
+                        <div class="registry-header">
+                            <h3>Sarah's 30th Birthday</h3>
+                            <span class="badge badge-birthday">Birthday</span>
+                        </div>
+                        <p class="registry-date">October 15, 2024</p>
+                        <div class="registry-stats">
+                            <span><i class="fas fa-gift"></i> 12/25 items purchased</span>
+                        </div>
+                        <div class="registry-actions">
+                            <a href="registry-detail.html" class="btn btn-outline">View</a>
+                            <a href="#" class="btn btn-secondary">Share</a>
+                        </div>
+                    </div>
+                    
+                    <div class="registry-card">
+                        <div class="registry-header">
+                            <h3>Wedding Registry</h3>
+                            <span class="badge badge-wedding">Wedding</span>
+                        </div>
+                        <p class="registry-date">June 22, 2024</p>
+                        <div class="registry-stats">
+                            <span><i class="fas fa-gift"></i> 6/15 items purchased</span>
+                        </div>
+                        <div class="registry-actions">
+                            <a href="registry-detail.html" class="btn btn-outline">View</a>
+                            <a href="#" class="btn btn-secondary">Share</a>
+                        </div>
+                    </div>
+                    
+                    <div class="registry-card">
+                        <div class="registry-header">
+                            <h3>Baby Shower</h3>
+                            <span class="badge badge-baby">Baby Shower</span>
+                        </div>
+                        <p class="registry-date">August 10, 2024</p>
+                        <div class="registry-stats">
+                            <span><i class="fas fa-gift"></i> 0/10 items purchased</span>
+                        </div>
+                        <div class="registry-actions">
+                            <a href="registry-detail.html" class="btn btn-outline">View</a>
+                            <a href="#" class="btn btn-secondary">Share</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="dashboard-section">
+                <h2>Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-gift text-success"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Alex Johnson</strong> purchased "KitchenAid Mixer" from your Wedding Registry</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus text-info"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Maria Garcia</strong> viewed your Birthday Registry</p>
+                            <span class="activity-time">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-share-alt text-primary"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>You shared your Baby Shower registry link</p>
+                            <span class="activity-time">2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
